@@ -95,7 +95,7 @@ const Main = () => {
               Fund your Account, Make <br />
               Transfer and Pay Bills
             </h2>
-            <h6>Fast bill payment like never before with less charges</h6>
+            <h6>Fast bill payment like never before with lesss charges</h6>
 
             <div className="buttons">
               <span>Sign up now</span>
