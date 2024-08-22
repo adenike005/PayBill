@@ -10,11 +10,10 @@ const HeroImg = () => {
     <div className="heros">
     <div className="hero-mark">
     <h1>
-      Bills Payment Made Easy & Swift
+    All bills payment are handled on Paybills
       </h1>
       <h5>
-      Enjoy peace of mind knowing your finances are managed
-      seamlessly and securely  
+      Receive, send, exchange, and manage multiple currencies in one app. Open a foreign bank account from your phone for free
       </h5>
       <span>Join Now and Simplify Your Life</span>
       <div className="icon-img">
