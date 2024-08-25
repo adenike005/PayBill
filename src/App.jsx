@@ -1,10 +1,8 @@
 import React from "react"
 import './App.css'
-import Header from "./Component/Header"
-import HeroImg from "./Component/HeroImg"
-import Main from "./Component/Main"
-import FAQ from "./Component/FAQ"
-import Footer from "./Component/Footer"
+import Login from "./Component/Login"
+import { Routes, Route } from 'react-router-dom';
+import Landing from "./Landing"
 
 
 
@@ -13,17 +11,17 @@ function App() {
  
 
   return (
+
+
     <>
 
-    <div className="hero">
+<Routes>
+<Route path="/" element={<Landing />} />
+      <Route path="/login" element={<Login />} />
+     
+    </Routes>
 
-    <Header/>
-    <HeroImg/>
-    </div>
-
-    <Main/>
-    <FAQ/>
-    <Footer/>
+  
    
  
     </>
