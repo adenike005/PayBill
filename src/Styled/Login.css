@@ -1,3 +1,105 @@
-body{
+/* Ensure this CSS is included in your Login.css file */
+.logo_part {
     background-color: #004481;
+    background-image: url('/Authentication_login.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 30vw;
+    height: 50vh;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo_part h5 {
+    color: #fff;
+    font-weight: 100;
+    font-size: 0.7rem;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+.logo_part h4 {
+    text-align: center;
+    color: #fff;
+    margin-top: 5vh;
+    font-weight: 300;
+}
+
+.login-container h4 {
+    text-align: left;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+
+.fieldcontainer {
+    width: 100%;
+    padding: 0.9rem 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 2vh;
+}
+
+input::placeholder {
+    color: white;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    outline: none;
+    flex: 1;
+}
+
+.divider {
+    height: 20px;
+    background-color: #fff;
+    width: 1px;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: calc(100% - 40px); /* Adjust width to account for icons */
+}
+
+.lock {
+    margin-left: 10px; /* Adjust spacing between password field and icon */
+}
+
+@media screen and (max-width: 900px) {
+    .login-container {
+        width: 90vw;
+        height: 70vh;
+        border-radius: 10px;
+    }
 }
