@@ -1,4 +1,3 @@
-/* Header.css */
 body.no-scroll {
     overflow: hidden;
   }
@@ -44,7 +43,7 @@ body.no-scroll {
     display: flex;
 }
 
-a {
+.menu a {
     color: #fff;
     margin: 0rem 0.5rem;
     text-decoration: none;
@@ -55,15 +54,22 @@ a {
     display: none;
 }
 
-.login{
+.login  {
     background-color: transparent;
     color: #fff;
-    border: none;
+    /* border: 1px solid #fff;  */
+    padding: 0.5rem 1rem; 
+    border-radius: 30px; 
     cursor: pointer;
     font-size: 1.1rem;
     font-family: "light";
     margin-right: 10px;
+    text-decoration: none; 
+    display: inline-block; 
+    /* text-align: center; */
 }
+
+
 
 .register{
     background-color: transparent;
@@ -73,10 +79,11 @@ a {
     border-color: #fff;
     cursor: pointer;
     font-family: "light";
+    border: 1px solid #fff;
 }
 
 @media screen and (max-width: 767px) {
-    a {
+   .menu a {
         color: #000;
         margin: 10rem;
         font-size: 2rem;
@@ -115,22 +122,24 @@ a {
         align-items: center;
     }
 
-    .login{
+   
+
+    .login {
         background-color: transparent;
         color: #fff;
-        border: none;
-        cursor: pointer;
-        font-size: 1rem;
+       
+        padding: 0rem 0.5rem;
+        border-radius: 30px;
+        font-size: 0.8rem;
         margin-right: 5px;
+        text-align: center;
     }
     
-    .register{
-        background-color: transparent;
+    .register {
         padding: 0.5rem 1rem;
         border-radius: 30px;
         color: #fff;
-        border-color: #fff;
-        cursor: pointer;
+        border: 1px solid #fff;
     }
 }
 
@@ -143,5 +152,3 @@ a {
     background: rgba(0, 0, 0, 0.53);
     z-index: 9998;
 }
-
-

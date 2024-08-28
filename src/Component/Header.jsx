@@ -3,7 +3,7 @@ import Logo from "/Logo.png";
 import "../Styled/Header.css";
 import { List } from '@phosphor-icons/react';
 import Button from '/button.png'
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function Header() {
   const headerRef = useRef(null);
@@ -71,10 +71,11 @@ function Header() {
 
         {menuOpen && <div className="fixed-background" onClick={handleBackgroundClick}></div>}
 
-         <div className="button">
-          <button className="login"><Link to='/login'>Login</Link></button>
-          <button className="register">Register</button>
-         </div>
+        <div className="button">
+  <a href="/login" className="login">Login</a>
+  <a href="/register" className="register">Register</a>
+  {/* <button className="register">Register</button> */}
+</div>
         <div className="mobile_menu">
           <List size={18} color="#fff" onClick={menuToggle} />
         </div>
@@ -84,6 +85,5 @@ function Header() {
 }
 
 export default Header;
-
 
 

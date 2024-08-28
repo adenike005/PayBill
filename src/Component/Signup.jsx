@@ -3,7 +3,7 @@ import '../Styled/Login.css';
 import Logo from "/Logo.png";
 import { EnvelopeSimple, Eye, Lock } from '@phosphor-icons/react';
 
-const Login = () => {
+const Signup = () => {
   return (
     <div className='logo_part'>
       <div className="logo">
@@ -27,18 +27,12 @@ const Login = () => {
           </div>
         </div>
         <h5>Forget Password?</h5>
-        <div className="sign-in-button">
-          
-        <button>Sign in</button>
-        </div>
       </div>
-      
       <div className="center">
         <h4>Are you a new user? Sign up</h4>
-       
       </div>
     </div>
   );
 }
 
-export default Login;
+export default Signup;
