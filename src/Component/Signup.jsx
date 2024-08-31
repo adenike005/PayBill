@@ -2,6 +2,7 @@ import React from 'react';
 import '../Styled/Login.css';
 import Logo from "/Logo.png";
 import { EnvelopeSimple, Eye, Lock } from '@phosphor-icons/react';
+import { Link} from 'react-router-dom'
 
 const Signup = () => {
   return (
@@ -29,7 +30,7 @@ const Signup = () => {
         <h5>Forget Password?</h5>
       </div>
       <div className="center">
-        <h4>Are you a new user? Sign up</h4>
+        <h4>Already have an account ? <Link to='/login'>Sign In</Link></h4>
       </div>
     </div>
   );
